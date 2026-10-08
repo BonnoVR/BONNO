@@ -94,7 +94,7 @@ h2.sec {
 }
 .step { margin: 0 0 2.4rem; }
 .step h3 { font-family: var(--sans); font-size: 15px; font-weight: 600; margin: 0 0 0.6rem; }
-.shot { background: var(--paper-2); position: relative; overflow: hidden; }
+.shot.slim { width: 60%; margin-inline: auto; }
 .shot img { width: 100%; height: 100%; object-fit: cover; }
 .shot figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;
