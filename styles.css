@@ -111,6 +111,23 @@ h2.sec {
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about h1 { text-align: left; }
 .mail { text-decoration: underline; text-underline-offset: 4px; }
+.form { margin: 2.5rem auto 0; max-width: 28rem; text-align: left; display: flex; flex-direction: column; gap: 1.15rem; }
+.form label { display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.form input, .form textarea {
+  display: block; width: 100%; margin-top: 0.45rem;
+  border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  font: inherit; font-size: 15px; letter-spacing: 0; text-transform: none;
+  padding: 0.75rem 0.8rem; outline: none;
+}
+.form textarea { resize: vertical; min-height: 8rem; }
+.form input:focus, .form textarea:focus { border-color: var(--ink); }
+.form button[type="submit"] {
+  border: 0; background: var(--ink); color: var(--paper);
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  padding: 0.85rem 1rem; cursor: pointer;
+}
+.form button[type="submit"]:disabled { opacity: 0.5; cursor: default; }
+.form .note { text-align: center; font-size: 14px; letter-spacing: 0; text-transform: none; color: var(--ink); margin: 0; }
 footer {
   border-top: 1px solid var(--line);
   display: flex;
