@@ -159,7 +159,7 @@ footer .copyr { color: var(--muted); font-size: 11px; letter-spacing: 0.16em; ma
 .cards p { margin: 0.4rem 0 0; font-size: 12px; }
 
 @media (max-width: 900px) {
-  nav.desk, .tools .ig, .tools .lang { display: none; }
+  nav.desk a, .tools .ig, .tools .lang, .tools > span { display: none; }
   .burger { display: inline-flex; align-items: center; justify-content: center; justify-self: end; }
   .bar { grid-template-columns: 1fr auto 1fr; }
   .wordmark { font-size: 28px; }
