@@ -111,6 +111,7 @@ h2.sec {
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about h1 { text-align: left; }
 .mail { text-decoration: underline; text-underline-offset: 4px; }
+footer .mail { text-decoration: none; }
 .form { margin: 2.5rem auto 0; max-width: 28rem; text-align: left; display: flex; flex-direction: column; gap: 1.15rem; }
 .form label { display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
 .form input, .form textarea {
