@@ -113,13 +113,29 @@ h2.sec {
 .mail { text-decoration: underline; text-underline-offset: 4px; }
 footer {
   border-top: 1px solid var(--line);
-  text-align: center;
-  padding: 3rem var(--pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem var(--pad);
   font-size: 13px;
+  line-height: 1;
   color: var(--soft);
+  text-align: center;
 }
-footer .follow { letter-spacing: 0.28em; text-transform: uppercase; font-size: 11px; color: rgb(0 0 0 / 0.8); }
-footer .copyr { color: var(--muted); font-size: 11px; letter-spacing: 0.16em; margin-top: 1.2rem; }
+footer p { margin: 0; }
+footer .follow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(0 0 0 / 0.8);
+}
+footer .follow svg { width: 15px; height: 15px; display: block; flex: none; }
+footer .follow span { margin-right: -0.28em; }
+footer .copyr { color: var(--muted); font-size: 11px; letter-spacing: 0.16em; margin-right: -0.16em; }
 .back { display: block; text-align: center; margin-top: 2.5rem; font-size: 14px; letter-spacing: 0.12em; text-decoration: underline; text-underline-offset: 4px; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; list-style: none; padding: 0; margin: 2rem 0 0; }
 .cards li { border: 1px solid var(--line); padding: 0.75rem; }
