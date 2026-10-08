@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nl" data-lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio Design Meubels op Maat | BONNO</title>
+<meta name="description" content="BONNO | meubels op maat, op bestelling gemaakt in ons atelier in Amsterdam.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <nav class="desk" aria-label="Hoofdmenu">
+      <a href="index.html">home</a>
+      <a href="designs.html" class="here">designs</a>
+      <a href="interiors.html">interiors</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </nav>
+    <a class="wordmark" href="index.html">BONNO</a>
+    <div class="tools">
+      <a class="ig" href="https://instagram.com/bonno.nl" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a>
+      <button class="lang on" type="button" data-set="nl">NL</button>
+      <span>/</span>
+      <button class="lang" type="button" data-set="en">EN</button>
+      <button class="burger" type="button" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <nav class="drawer" id="drawer">
+    <a href="index.html">home</a>
+    <a href="designs.html">designs</a>
+    <a href="interiors.html">interiors</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+    <a href="https://instagram.com/bonno.nl" target="_blank" rel="noreferrer">Instagram</a>
+    <div><button type="button" data-set="nl">NL</button> / <button type="button" data-set="en">EN</button></div>
+  </nav>
+</header>
+<main><div class="wrap">
+<h1><span class="nl">Nieuwste ontwerpen</span><span class="en">Latest designs</span></h1>
+<section><h2 class="sec"><span class="nl">Tafellamp</span><span class="en">Table lamp</span></h2><div class="grid2"><figure class="shot" style="aspect-ratio:4/5"><img src="images/design-lamp-1.svg" alt="FOTO-03"><figcaption><span>FOTO-03</span><span>design-lamp-1.jpg</span></figcaption></figure><figure class="shot" style="aspect-ratio:4/5"><img src="images/design-lamp-2.svg" alt="FOTO-04"><figcaption><span>FOTO-04</span><span>design-lamp-2.jpg</span></figcaption></figure></div></section>
+<section style="margin-top:4rem"><h2 class="sec"><span class="nl">Hoofdbord met nachtkastjes</span><span class="en">Headboard with sidetables</span></h2><figure class="shot" style="aspect-ratio:16/9"><img src="images/design-headboard.svg" alt="FOTO-05"><figcaption><span>FOTO-05</span><span>design-headboard.jpg</span></figcaption></figure></section>
+<section style="margin-top:4rem"><h2 class="sec"><span class="nl">Teakhouten stoel — voor binnen/buiten</span><span class="en">Teak chair — in/outdoor</span></h2><div style="max-width:32rem;margin:0 auto"><a href="gallery2.html"><figure class="shot" style="aspect-ratio:4/5"><img src="images/design-teak-chair.svg" alt="FOTO-06"><figcaption><span>FOTO-06</span><span>design-teak-chair.jpg</span></figcaption></figure></a></div></section>
+<section style="margin-top:4rem"><h2 class="sec"><span class="nl">Eikenhouten krukken serie</span><span class="en">Oak stool series</span></h2>
+<div class="grid3">
+<div><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-hexagon.svg" alt="FOTO-07"><figcaption><span>FOTO-07</span><span>design-stool-hexagon.jpg</span></figcaption></figure><p class="mini">Hexagon</p><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-hexagon-top.svg" alt="FOTO-08"><figcaption><span>FOTO-08</span><span>design-stool-hexagon-top.jpg</span></figcaption></figure></div>
+<div><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-hourglass.svg" alt="FOTO-09"><figcaption><span>FOTO-09</span><span>design-stool-hourglass.jpg</span></figcaption></figure><p class="mini">Hourglass</p><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-hourglass-top.svg" alt="FOTO-10"><figcaption><span>FOTO-10</span><span>design-stool-hourglass-top.jpg</span></figcaption></figure></div>
+<div><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-wavy.svg" alt="FOTO-11"><figcaption><span>FOTO-11</span><span>design-stool-wavy.jpg</span></figcaption></figure><p class="mini">Wavy</p><figure class="shot" style="aspect-ratio:1/1"><img src="images/design-stool-wavy-top.svg" alt="FOTO-12"><figcaption><span>FOTO-12</span><span>design-stool-wavy-top.jpg</span></figcaption></figure></div>
+</div></section>
+</div></main>
+<footer>
+  <p><a class="follow" href="https://instagram.com/bonno.nl" target="_blank" rel="noreferrer">Follow</a></p>
+  <p><a class="mail" href="mailto:info@bonno.nl">info@bonno.nl</a></p>
+  <p>Nieuwpoortkade 2A<br>Amsterdam</p>
+  <p class="copyr">© 2024</p>
+</footer>
+<script>
+  const root = document.documentElement;
+  const saved = localStorage.getItem("bonno-lang");
+  if (saved === "en" || saved === "nl") root.dataset.lang = saved;
+  function setLang(lang) {
+    root.dataset.lang = lang;
+    localStorage.setItem("bonno-lang", lang);
+    document.querySelectorAll(".lang").forEach((b) => b.classList.toggle("on", b.dataset.set === lang));
+  }
+  document.querySelectorAll("[data-set]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.set)));
+  setLang(root.dataset.lang);
+  const burger = document.querySelector(".burger");
+  const drawer = document.getElementById("drawer");
+  burger.addEventListener("click", () => drawer.classList.toggle("open"));
+</script>
+</body>
+</html>
