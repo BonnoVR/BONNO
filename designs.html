@@ -70,6 +70,10 @@
   const burger = document.querySelector(".burger");
   const drawer = document.getElementById("drawer");
   burger.addEventListener("click", () => drawer.classList.toggle("open"));
+  const closeDrawer = () => drawer.classList.remove("open");
+  window.addEventListener("scroll", closeDrawer, { passive: true });
+  window.addEventListener("wheel", closeDrawer, { passive: true });
+  window.addEventListener("touchmove", closeDrawer, { passive: true });
 </script>
 </body>
 </html>
