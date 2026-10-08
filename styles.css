@@ -111,8 +111,7 @@ h2.sec {
 .mini { text-align: center; margin: 0.7rem 0 0.8rem; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about h1 { text-align: left; }
-.mail { text-decoration: underline; text-underline-offset: 4px; }
-footer .mail { text-decoration: none; }
+.mail { text-decoration: none; }
 .form { margin: 2.5rem auto 0; max-width: 28rem; text-align: left; display: flex; flex-direction: column; gap: 1.15rem; }
 .form label { display: block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
 .form input, .form textarea {
@@ -155,7 +154,7 @@ footer .follow {
 footer .follow svg { width: 15px; height: 15px; display: block; flex: none; }
 footer .follow span { margin-right: -0.28em; }
 footer .copyr { color: var(--muted); font-size: 11px; letter-spacing: 0.16em; margin-right: -0.16em; }
-.back { display: block; text-align: center; margin-top: 2.5rem; font-size: 14px; letter-spacing: 0.12em; text-decoration: underline; text-underline-offset: 4px; }
+.back { display: block; text-align: center; margin-top: 2.5rem; font-size: 14px; letter-spacing: 0.12em; text-decoration: none; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; list-style: none; padding: 0; margin: 2rem 0 0; }
 .cards li { border: 1px solid var(--line); padding: 0.75rem; }
 .cards p { margin: 0.4rem 0 0; font-size: 12px; }
